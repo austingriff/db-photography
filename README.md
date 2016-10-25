@@ -1,6 +1,6 @@
 ## DB Photography
 
-This is the README for the db photography.  It contains basic information regarding the application, as well as, getting started and license agreements.
+This is the README for the db photography website.  It contains basic information regarding the application, as well as, getting started and license agreements.
 
 ## Synopsis
 
