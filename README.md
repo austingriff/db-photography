@@ -1,10 +1,10 @@
-## STUDENT DATABASE - DEPARTMENT OF ANTHROPOLOGY
+## DB Photography
 
 This is the README for the db photography.  It contains basic information regarding the application, as well as, getting started and license agreements.
 
 ## Synopsis
 
-The student-database repository contains the development environment for a web application which gives admin users the ability to manage a database of student. In addition, the system also gives students the ability to plan their studies and view their profile.
+The db-photography repository contains the development environment for a web application which gives a photography the ability to upload, display, and manage a portfolio of images!
 
 ## Motivation
 
@@ -20,7 +20,7 @@ In order to set up the development environment you must first install Vagrant an
 Now head over to terminal and try running the following commands:
 
 - cd ~
-- git clone https://github.com/austingriff/dbphotography.git
+- git clone https://github.com/austingriff/db-photography.git
 - cd dbphotography/
 - vagrant box add ubuntu/trusty64
 - vagrant up
