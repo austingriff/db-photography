@@ -1,0 +1,139 @@
+/*************************************************************************
+ * @author austin griffin
+ * 09/27/16
+ *
+ * contains the styling for content inside the body div
+ *
+ */
+
+/* Home
+/*************************************************************************/
+#vertical-nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 500px;
+    background-color: #f1f1f1;
+	border: 1px solid #a6abaf;
+	border-radius: 6px;
+}
+
+#vertical-nav li > a {
+    display: block;
+    color: #000;
+	font-size: 16px;
+	text-align:center;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+#vertical-nav li > a:hover {
+    background-color: #555;
+    color: white;
+}
+
+
+
+/* Register
+/*************************************************************************/
+#register {
+	width:350px;
+	padding:20px;
+}
+
+#register-message  p{
+	font-size:16px;
+	color:#333;
+}
+
+/* Register
+/*************************************************************************/
+#data-entry {
+	width:350px;
+	padding:20px;
+}
+
+#data-message  p{
+	font-size:16px;
+	color:#333;
+}
+
+/* Login
+/*************************************************************************/
+#login {
+	width:400px;
+	padding:20px;
+}
+
+/* Start
+/*************************************************************************/
+#start {
+	width:500px;
+	padding:20px;
+}
+
+/* Students
+/*************************************************************************/
+/* Style the list */
+#students ul.tab {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+/* Float the list items side by side */
+#students ul.tab li {float: left;}
+
+/* Style the links inside the list items */
+ #students ul.tab li a {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of links on hover */
+#students ul.tab li a:hover {background-color: #ddd;}
+
+/* Create an active/current tablink class */
+#students ul.tab li a:focus, .active {background-color: #ccc;}
+
+#students tr:nth-child(even) {
+    background-color: #f1f1f1;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
+/* Manage Users
+/*************************************************************************/
+#user				{margin-bottom:25px; text-align:center; }
+#user a 			{padding:10px; background:#4b1312; color:#CCC; display:inline; margin-right:15px; }
+#user a:hover		{padding:10px; background:#CCC; color:#4b1312}
+#user p				{margin-bottom:15px; text-align:center;}
+
+
+/* Message
+/*************************************************************************/
+#message {
+	width:600px;
+	margin:0 auto;
+	padding:15px;
+	background-color: #f1f1f1;
+	border: 1px solid #a6abaf;
+	border-radius: 6px;
+}
+#message h2 {
+	margin-bottom:10px;
+}

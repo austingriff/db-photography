@@ -1,0 +1,12 @@
+This file contains critical information pertaining to content that must
+be changed when the system is ready for use on a new server.
+
+
+register.php
+	update three links when system is moved...
+	1) change activation email from (sender) - currently admin@calorie-conscious.com
+	2) change activation email to (recipient) - currently austingriff@tamu.edu
+	3) update activation link in email - currently "http://www.calorie-conscious.com/admin/SD/php/activation.php?e=&p=
+	
+activation.php
+	update the emails and links ins activation like register
