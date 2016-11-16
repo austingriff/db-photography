@@ -23,19 +23,19 @@
 
 <body>
 	<div id="container">
-		<?php include_once("php/include/header.php"); ?>
 		<div id="body">
-			<div id="login" class="center-div">
-				<div id="login-form" class="my-form">
-					<h1>Login</h1>
-					<input id="email" type="text" placeholder="Email" onfocus="emptyElement('status')">
-					<input id="password" type="password" placeholder="Password" onfocus="emptyElement('status')">
-					<input id="loginbtn" type="submit" value="Login" onclick="login()">
-					<span id="status" style="text-align:center;"></span>
+			<div id="main" class="main-content">
+				<div id="login" class="center-div">
+					<div id="login-form" class="my-form">
+						<h1>Login</h1>
+						<input id="email" type="text" placeholder="Email" onfocus="emptyElement('status')">
+						<input id="password" type="password" placeholder="Password" onfocus="emptyElement('status')">
+						<input id="loginbtn" type="submit" value="Login" onclick="login()">
+						<span id="status" style="text-align:center;"></span>
+					</div>
 				</div>
-			</div>
+		</div>
 		</div>
   </div>
-	<?php include_once("php/include/footer.php"); ?>
 </body>
 </html>

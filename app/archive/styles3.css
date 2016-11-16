@@ -12,7 +12,7 @@ html, body {
 	padding: 0;
 	border: 0;
 	background: transparent;
-	background-color:#fff;
+	background-color:#000;
 	font-size:10px;
 	height:100%;
 }
@@ -37,13 +37,13 @@ img 	{
   font-family: myFont;
   font-style: normal;
   font-weight: normal;
-  src: url("../fonts/Simple-light.ttf");
+  src: url("../SIMPLIFICA Typeface.ttf");
 }
 
-h1, h2, h3, h4, h5, h6, p, li, blockquote, td, th, a, caption, em, strong, strike, span {
+h1, h2, h3, h4, h5, h6, p, li, blockquote, td, th, a, caption, em, strong, strike {
 	font-family:myFont;
 	font-size:100%;
-	font-weight: normal;
+	font-weight:normal;
 	font-style: normal;
 	line-height: 100%;
 	text-indent: 0;
@@ -51,8 +51,6 @@ h1, h2, h3, h4, h5, h6, p, li, blockquote, td, th, a, caption, em, strong, strik
 	text-align: left;
 	color: #fff;
 }
-
-
 
 
 /* Basic Font Properties */
@@ -67,7 +65,7 @@ ol, ul {
 	list-style: none;
 }
 
-h1 { font-size:72px; color:#000; font-weight: bold; text-align: center; margin-bottom:50px;} /* Main Title Heading */
+h1 { font-size:55px; color:#fff; font-weight: bold; text-align: center; margin-bottom: 20px;} /* Main Title Heading */
 h2 { font-size:28px; color:#510000; border-bottom: 1px #ccc solid; margin-bottom: 8px; text-align: center;} /* Sub-Title Heading */
 h3 { font-size:22px; color:#510000; margin-bottom:10px; }
 h4 { font-size:20px; color:#000; }
@@ -130,11 +128,6 @@ input:focus, textarea:focus, select:focus {
 
 .blueberry { max-width: 960px; }
 
-.main-content {
-		width:1000px;
-		margin:250px auto;
-		padding: 0;
-}
 
 .overlay {
     height: 100%;
@@ -144,7 +137,7 @@ input:focus, textarea:focus, select:focus {
     top: 0;
     left: 0;
     background-color: #333333;
-    background-color: rgba(51,51,51,0.9);
+    background-color: rgba(77,77,77, 0.9);
     overflow-x: hidden;
     transition: 0.5s;
 }
@@ -157,14 +150,10 @@ input:focus, textarea:focus, select:focus {
     margin-top: 30px;
 }
 
-.overlay-content a {
-    font-size: 72px;
-}
-
 .overlay a {
     padding: 8px;
     text-decoration: none;
-    font-size: 72px;
+    font-size: 36px;
     color: #818181;
     display: block;
     transition: 0.3s;
@@ -178,7 +167,7 @@ input:focus, textarea:focus, select:focus {
     position: absolute;
     top: 20px;
     right: 45px;
-    font-size: 100px;
+    font-size: 60px;
 }
 
 @media screen and (max-height: 450px) {
@@ -200,43 +189,40 @@ input:focus, textarea:focus, select:focus {
 
 #header {
 	margin:0 auto;
-	margin:100px auto 100px auto;
+	padding:40px;
 	text-align: center;
 }
 
 #header p {
 	text-align: center;
-	color:#000;
+	color:#fff;
+	font-size: 20px;
 }
 
 #header a {
 	text-align: center;
+	color:#fff;
+}
+
+#menu p {
+	text-align: center;
+	font-size: 28px;
+	margin-bottom: 8px;
+	color:#4d4d4d;
+}
+#menu a {
+	text-align: center;
+	color:#4d4d4d;
+}
+
+#menu a:hover {
+	text-align: center;
 	color:#000;
-}
-
-
-#header span {
-	color: #4d4d4d;
-	font-size: 50px
-}
-#myNav a {
-	text-align: center;
-	color: #fff;
-	font-size: 36px;
-}
-
-#myNav > a:hover {
-	text-align: center;
-	color: #4d4d4d;
-}
-#login {
-	width:400px;
-	height:320px;
 }
 
 #content {
 	margin: 0 auto;
 	min-width: 740px;
 	max-width: 1140px;
-	background: #fff;
+	background: #000;
 }
