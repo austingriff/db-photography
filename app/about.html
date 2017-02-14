@@ -23,12 +23,6 @@
 			$('.blueberry').blueberry();
 		});
 
-		$("#sub_menu_hov").hover(function(){
-		    $('#sub_menu').css("display", "block");
-		    }, function(){
-		    $('#sub_menu').css("display", "none");
-		});
-
 		/* When the user clicks on the button,
 	toggle between hiding and showing the dropdown content */
 	function myFunction() {
@@ -62,14 +56,6 @@
 				  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 				  <div class="overlay-content">
 				    <a href="about.html">ABOUT/CONTACT</a>
-						<!--
-				    <a id="sub_menu_hov" href="portfolio.html">PHOTOGRAPHY</a>
-						<div id="sub_menu" style="display:none;">
-							<a href="#.html"></a>
-							<a href="#.html"></a>
-							<a href="#.html"></a>
-							<a href="#.html"></a>
-						</div>-->
 						<div class="dropdown">
 					  <a onclick="myFunction()" class="dropbtn">PHOTOGRAPHY</a>
 					  <div id="myDropdown" class="dropdown-content">
@@ -96,15 +82,13 @@
 			</div>
 
 		  <div id="content">
-				<div class="blueberry">
-			    <ul class="slides">
-			      <li><img src="imgs/slider/slider1.jpg" /></li>
-			      <li><img src="imgs/slider/slider2.jpg" /></li>
-			      <li><img src="imgs/slider/slider3.jpg" /></li>
-			      <li><img src="imgs/slider/slider4.jpg" /></li>
-						<li><img src="imgs/slider/slider5.jpg" /></li>
-			    </ul>
-			  </div>
+				<div id="about">
+					<p>My name is Blake Fountain. I'm currently living in Austin, Tx. I picked up the interest of photography when I would find myself taking random shots on my iphone here and there. I didnt get serious about the art until I got my first camera at twenty two years old. Having no experience, I've mainly taught myself what it takes to be a photographer. What i love most is making special moments last forever with just a push of a button, all while bringing my visions to life. I am willing to travel wherever you are to capture your special moments, and my schedule is flexible as well. Let's get creative!</p>
+					</br>
+					<p>Inquire here for availability, and pricing:</p>
+					</br>
+					<button>CONTACT</button>
+				</div>
 		  </div>
 		</div>
 	</div>

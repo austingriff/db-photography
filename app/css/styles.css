@@ -7,6 +7,91 @@
 /* Initialize styles
 /*************************************************************************/
 
+html { height: 100%; }
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+/* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+
+body {
+    font-family: myfont;
+    background: #fff;
+    font-weight: 300;
+    font-size: 15px;
+    color: #333;
+    -webkit-font-smoothing: antialiased;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+a {
+	color: #555;
+	text-decoration: none;
+}
+
+.container {
+	width: 100%;
+	position: relative;
+}
+
+.main {
+	max-width: 1580px;
+	margin: 0 auto;
+	/*border:1px solid #f00;*/
+}
+
+.main h2 {
+	font-size: 38px;
+	font-weight: 300;
+	text-shadow: 0 1px 0 rgba(255,255,255,0.9);
+	padding: 10px 0 0 0;
+	margin-bottom: 20px;
+	border-top: 1px solid #f7f7f7;
+}
+
+
+.support-note span{
+	color: #ac375d;
+	font-size: 16px;
+	display: none;
+	font-weight: bold;
+	text-align: center;
+	padding: 5px 0;
+}
+
+.loadmore {
+	padding: 10px;
+	background: #ddd;
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	font-weight: 700;
+	text-align: center;
+	cursor: pointer;
+	margin: 10px 4px;
+	display: none;
+}
+
+.loadmore:hover {
+	background: #333;
+}
+/*
 html, body {
 	margin: 0;
 	padding: 0;
@@ -32,7 +117,7 @@ img 	{
 	padding:0;
 	border:0;
 }
-
+*/
 @font-face {
   font-family: myFont;
   font-style: normal;
@@ -48,6 +133,7 @@ h1, h2, h3, h4, h5, h6, p, li, blockquote, td, th, a, caption, em, strong, strik
 	line-height: 100%;
 	text-indent: 0;
 	text-decoration: none;
+	letter-spacing: 3px;
 	text-align: left;
 	color: #fff;
 }
@@ -67,12 +153,12 @@ ol, ul {
 	list-style: none;
 }
 
-h1 { font-size:72px; color:#000; font-weight: bold; text-align: center; margin-bottom:30px;} /* Main Title Heading */
+h1 { font-size:72px; color:#000; text-align: center; margin-bottom:30px; letter-spacing: 12px;} /* Main Title Heading */
 h2 { font-size:28px; color:#510000; border-bottom: 1px #ccc solid; margin-bottom: 8px; text-align: center;} /* Sub-Title Heading */
-h3 { font-size:22px; color:#510000; margin-bottom:10px; }
+h3 { font-size:22px; color:#000; margin-bottom:10px; }
 h4 { font-size:20px; color:#000; }
-h5 { font-size:18px; color:#000; }
-h6 { font-size:28px; color:#510000; border-bottom: 1px #ccc solid; margin-top:35px; margin-bottom: 25px; text-align: center;} /* Sub-Title Heading */
+h5 { font-size:32px; text-align: center; color:#4d4d4d; }
+h6 { font-size:28px; color:#510000; border-bottom: 1px #ccc solid; margin:35px 0; text-align: center;} /* Sub-Title Heading */
 
 
 /* Forms */
@@ -151,10 +237,10 @@ input:focus, textarea:focus, select:focus {
 
 .overlay-content {
     position: relative;
-    top: 25%;
+    top: 15%;
     width: 100%;
     text-align: center;
-    margin-top: 30px;
+    margin-top: 0px;
 }
 
 .overlay-content a {
@@ -193,15 +279,16 @@ input:focus, textarea:focus, select:focus {
 /* Basic Div Structure
 /*************************************************************************/
 #container {
-
+	width:100%;
 }
 
 #doc { margin: 0 0;}
 
 #header {
 	width:1000px;
-	margin:75px auto 75px auto;
+	margin:75px auto 20px auto;
 	text-align: center;
+	/*border:1px solid #000;*/
 }
 
 #header p {
@@ -217,7 +304,7 @@ input:focus, textarea:focus, select:focus {
 
 #header span {
 	color: #4d4d4d;
-	font-size: 50px
+	font-size: 40px
 }
 #myNav a {
 	text-align: center;
@@ -235,11 +322,60 @@ input:focus, textarea:focus, select:focus {
 }
 #footer {
 	width:1000px;
-	margin:50px auto;
+	margin:50px auto 100px auto;
 	margin-top: 35px;
 }
 #content {
 	margin: 0 auto;
 	min-width: 740px;
 	background: #fff;
+	/*border:1px solid #f00;*/
 }
+
+#about {
+	width:1000px;
+	margin:0 auto;
+	text-align: center;
+}
+
+#about p {
+	text-align: center;
+}
+
+
+/* drop down menu */
+
+/* Dropdown Button */
+.dropbtn {
+
+    cursor: pointer;
+}
+
+/* Dropdown button on hover & focus */
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #686868;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;*
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}

@@ -17,13 +17,15 @@
 
 .gamma-container {
 	min-height: 200px;
+  margin:0 100px;
+  /*border:1px solid #f00;*/
 }
 
 .gamma-gallery {
 	list-style-type: none;
 	padding: 0;
 	margin: 0;
-	width: 80%;
+	width: 100%;
 	position: relative;
 }
 
@@ -81,8 +83,8 @@
 }
 
 .no-touch .gamma-gallery li:hover .gamma-description {
-	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
-	filter: alpha(opacity=80);
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+	filter: alpha(opacity=50);
 	opacity: 1;
 }
 
@@ -95,6 +97,7 @@
 .gamma-description h3 {
 	display: inline-block;
 	vertical-align: middle;
+  text-align: center;
 }
 
 .gamma-description h3 {
@@ -232,7 +235,7 @@ button.gamma-btn-sspause:before {
 
 .gamma-nav span:before {
 	color: #fff;
-	opacity: 0.7;
+	opacity: 0.5;
 	font-size: 40px;
 }
 
